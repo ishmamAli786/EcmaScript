@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+    <link rel="stylesheet" type="text/css" href="ind.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <h3>DEVELOPE BY ISHMAMALIKHAN</h3>
+        <h1 >WHAT DOES YOUR NAME SAY ABOUT YOUR PERSONALITY?</h1>
+        <div class="centerDiv">
+            <div class="details">
+                <label>ENTER YOUR NAME</label><br>
+                <input type="text" name="" id="nameid">
+            </div>
+            <div class="imgdiv">
+                <img src="y.jpg" alt="welcome image" width="200" height="200" class="imgchange">
+            </div>
+            <button>Click Me</button>
+        </div>
+    </section>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script> 
+<script>
+    $(document).ready(function(){
+        $('button').click(function(){
+            const name = $('#nameid').val();
+            alert(name);
+            $('.imgchange').attr('src',`https://joeschmoe.io/api/v1/male/${name}`)
+        });
+    });
+</script>
+</body>
+</html>
