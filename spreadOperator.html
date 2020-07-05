@@ -1,0 +1,41 @@
+<script>
+    //es5
+    function sum(a,b,c){
+        console.log(a+b+c);
+    }
+  //  sum(1,2,3)
+  var arrVal=[5,2,3];
+  sum.apply(null,arrVal);
+
+
+  //es6
+  // first ccase
+
+  function sume(a,b,c){
+        console.log(a+b+c);
+    }
+    console.log(...arrVal);
+    var arrVal=[5,2,9];
+    sume(...arrVal);
+    //second case in concatenation
+    // replace concat()
+
+    /*let arr1=[1,2,3,7];
+    let arr2=[4,5,6,8];
+   // arr1=arr1.concat(arr2);
+   arr1=[...arr1,...arr2];
+    console.log(arr1);
+    */
+
+    //replace copy()
+    let arrc1=[1,2,3];
+   // let arrc2=arrc1;
+   // console.log(arrc2);
+    let arrc2=[...arrc1,4,5];
+  //  console.log(arrc2);
+   // console.log(arrc1);
+   console.log(arrc2);
+   console.log(arrc1);
+
+
+</script>
